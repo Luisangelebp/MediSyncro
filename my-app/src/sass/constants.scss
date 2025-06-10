@@ -2,3 +2,17 @@ $fontPrimary:'Roboto'; // Primary font for the application
 $fontSecondary:'Arial, sans-serif'; // Secondary font for fallback
 $borderColor: rgb(131, 131, 131);
 // Default border color used in various components
+$textColor: rgb(0, 0, 0); // Default text color for readability
+
+.btn {
+    background-color: white;
+    padding: 1%;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: rgb(216, 216, 216);
+    }
+}

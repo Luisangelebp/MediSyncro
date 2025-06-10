@@ -1,4 +1,4 @@
-import './css/MobilMenu.css';
+import '../css/MobilMenu.css';
 import { useState } from 'react';
 
 export default function MobilMenu(elementsMenu) {

@@ -62,6 +62,11 @@ i {
             .menu-item {
                 text-decoration: none !important;
                 font-weight: bold;
+                color: c.$textColor;
+
+                &:visited {
+                    color: c.$textColor;
+                }
             }
         }
 

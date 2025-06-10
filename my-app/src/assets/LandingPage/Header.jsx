@@ -1,7 +1,7 @@
 import MobilMenu from './MobilMenu';
-import '../../public/logo.svg';
-import './css/App.css';
-import { elementsMenu } from './constans/constans';
+import '../../../public/logo.svg';
+import '../css/App.css';
+import { elementsMenu } from '../constans/constans';
 export default function Header() {
     return (
         <header>

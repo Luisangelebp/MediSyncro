@@ -1,10 +1,11 @@
 import './assets/css/App.css';
-import Header from './assets/Header';
+import Header from './assets/LandingPage/Header';
+import Main from './assets/LandingPage/Main';
 function App() {
     return (
         <>
             <Header />
-            <main></main>
+            <Main></Main>
             <footer></footer>
         </>
     );

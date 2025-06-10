@@ -1,3 +1,15 @@
+.btn {
+  background-color: white;
+  padding: 1%;
+  border: 1px solid rgb(131, 131, 131);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(216, 216, 216);
+}
+
 .mobil-menu {
   cursor: pointer;
 }
@@ -53,4 +65,8 @@ i:hover {
 .modalMenu .menu li .menu-item {
   text-decoration: none !important;
   font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+.modalMenu .menu li .menu-item:visited {
+  color: rgb(0, 0, 0);
 }/*# sourceMappingURL=MobilMenu.css.map */

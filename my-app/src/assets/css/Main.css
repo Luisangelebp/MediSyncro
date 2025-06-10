@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.btn {
+  background-color: white;
+  padding: 1%;
+  border: 1px solid rgb(131, 131, 131);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.login-container {
+  width: 100%;
+  height: 60dvh;
+  position: relative;
+  z-index: 1;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-container button {
+  padding: 0.8em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+.login-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/mainLoginDoctor.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  /* Ajusta la opacidad aquí */
+  z-index: -1;
+}
+
+.AboutUs {
+  margin: 0 0.5em;
+}
+.AboutUs h2 {
+  font-family: "Roboto";
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.AboutUs p {
+  font-family: "Arial, sans-serif";
+  font-size: 1.2em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 1em;
+  text-align: justify;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.5em;
+  border-top: 1px solid rgb(131, 131, 131);
+}/*# sourceMappingURL=Main.css.map */
