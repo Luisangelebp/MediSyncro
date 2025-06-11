@@ -1,4 +1,4 @@
-import '../css/MobilMenu.css';
+import './css/MobilMenu.css';
 import { useState } from 'react';
 
 export default function MobilMenu(elementsMenu) {
@@ -13,7 +13,6 @@ export default function MobilMenu(elementsMenu) {
                 <div className="modalMenu" onClick={() => setMenuOpen(false)}>
                     <ul className="menu">
                         {elements_Menu.map((element, index) => {
-                            console.log(element);
                             return (
                                 <li key={index}>
                                     <a

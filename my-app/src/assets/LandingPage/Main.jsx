@@ -1,4 +1,4 @@
-import '../css/Main.css';
+import './css/Main.css';
 export default function Main() {
     return (
         <main>

@@ -1,4 +1,4 @@
-@import 'constants';
+@import '../../../sass/constants.scss';
 
 .svg-logo {
     width: 1em;
@@ -26,7 +26,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background-image: url("../img/mainLoginDoctor.jpg");
+        background-image: url("../../img/mainLoginDoctor.jpg");
         background-size: cover;
         background-position: center;
 

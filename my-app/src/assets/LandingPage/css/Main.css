@@ -38,7 +38,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../img/mainLoginDoctor.jpg");
+  background-image: url("../../img/mainLoginDoctor.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.5;
