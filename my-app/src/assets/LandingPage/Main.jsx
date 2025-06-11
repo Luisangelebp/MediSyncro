@@ -13,11 +13,7 @@ export default function Main() {
                         xmlns="http://www.w3.org/2000/svg"
                         className="svg-logo"
                     >
-                        <use
-                            href="../public/logo.svg"
-                            width="100"
-                            height="100"
-                        />
+                        <use href="../../logo.svg" width="100" height="100" />
                     </svg>
                     Sobre Nosotros
                 </h2>
@@ -39,11 +35,7 @@ export default function Main() {
                         xmlns="http://www.w3.org/2000/svg"
                         className="svg-logo"
                     >
-                        <use
-                            href="../public/logo.svg"
-                            width="100"
-                            height="100"
-                        />
+                        <use href="../../logo.svg" width="100" height="100" />
                     </svg>
                     Nuestros Servicios
                 </h2>
@@ -97,18 +89,14 @@ export default function Main() {
                     </p>
                 </div>
             </section>
-            <section className="contact" id="Contacto">
+            <section className="contact" id="Contactanos">
                 <h2>
                     <svg
                         viewBox="0 0 100 100"
                         xmlns="http://www.w3.org/2000/svg"
                         className="svg-logo"
                     >
-                        <use
-                            href="../public/logo.svg"
-                            width="100"
-                            height="100"
-                        />
+                        <use href="../../logo.svg" width="100" height="100" />
                     </svg>
                     Contacto
                 </h2>
