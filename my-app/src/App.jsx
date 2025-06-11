@@ -1,12 +1,9 @@
 import './assets/css/App.css';
-import Header from './assets/LandingPage/Header';
-import Main from './assets/LandingPage/Main';
+import LandingPage from './assets/LandingPage/LandingPage.jsx';
 function App() {
     return (
         <>
-            <Header />
-            <Main></Main>
-            <footer></footer>
+            <LandingPage />
         </>
     );
 }

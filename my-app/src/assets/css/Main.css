@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 .btn {
   background-color: white;
   padding: 1%;
@@ -9,6 +11,10 @@
 }
 .btn:hover {
   background-color: rgb(216, 216, 216);
+}
+
+.svg-logo {
+  width: 1em;
 }
 
 .login-container {
@@ -50,8 +56,8 @@
   text-align: center;
 }
 .AboutUs p {
-  font-family: "Arial, sans-serif";
-  font-size: 1.2em;
+  font-family: "Inter";
+  font-size: 1em;
   color: rgb(0, 0, 0);
   text-align: center;
   margin-top: 1em;
@@ -64,4 +70,45 @@
   align-items: center;
   margin: 0 0.5em;
   border-top: 1px solid rgb(131, 131, 131);
+}
+.services h2 {
+  font-family: "Roboto";
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.services .service {
+  background-color: white;
+  padding: 1em;
+  border-radius: 1em;
+  margin-top: 1em;
+  border: 1px solid rgb(131, 131, 131);
+}
+.services .service p {
+  font-family: "Inter";
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  border-top: 1px solid rgb(131, 131, 131);
+}
+.contact h2 {
+  font-family: "Roboto";
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.contact p {
+  font-family: "Inter";
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 1em;
+  text-align: justify;
 }/*# sourceMappingURL=Main.css.map */
