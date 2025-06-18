@@ -111,4 +111,47 @@
   text-align: center;
   margin-top: 1em;
   text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .login-container {
+    flex-direction: row;
+  }
+  .login-container button {
+    margin: 5%;
+  }
+  .services .service {
+    width: 80%;
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .AboutUs {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    align-items: center;
+  }
+  .AboutUs h2 {
+    width: 30%;
+  }
+  .AboutUs p {
+    border-left: 1px solid rgb(131, 131, 131);
+    padding-left: 2em;
+    width: 60%;
+  }
+  .services {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services h2 {
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+  }
+  .services .service {
+    width: 30%;
+    margin: 1em;
+  }
 }/*# sourceMappingURL=Main.css.map */

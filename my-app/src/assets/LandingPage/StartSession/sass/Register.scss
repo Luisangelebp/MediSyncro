@@ -1,0 +1,61 @@
+.slider {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.page1 {
+    min-width: 100%;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 9;
+    transform: translateX(-100%);
+
+
+}
+
+
+.page2 {
+    min-width: 100%;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+
+    input[type="date"]:required:invalid::-webkit-datetime-edit {
+        color: transparent;
+    }
+
+    input[type="date"]:focus::-webkit-datetime-edit {
+        color: black !important;
+    }
+
+}
+
+.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.next {
+    i {
+        font-size: 1rem !important;
+        color: #000;
+    }
+}
+
+.back {
+    display: none;
+
+    i {
+        font-size: 1rem !important;
+        color: #000;
+    }
+}
+
+#register {
+    display: none
+}

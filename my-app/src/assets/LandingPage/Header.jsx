@@ -1,8 +1,11 @@
 import MobilMenu from './MobilMenu';
+import Menu from './Menu';
 import '../../../public/logo.svg';
-import '../css/App.css';
+import '../../css/App.css';
+import { useScreenWidth } from '../constans/hooks';
 import { elementsMenu } from '../constans/constans';
 export default function Header() {
+    const screenWidth = useScreenWidth();
     return (
         <header>
             <div className="logo">
@@ -11,7 +14,11 @@ export default function Header() {
                 </svg>
             </div>
             <h1>MediSyncro</h1>
-            <MobilMenu elementsMenu={elementsMenu}></MobilMenu>
+            {screenWidth < 1024 ? (
+                <MobilMenu elementsMenu={elementsMenu}></MobilMenu>
+            ) : (
+                <Menu elementsMenu={elementsMenu} />
+            )}
         </header>
     );
 }

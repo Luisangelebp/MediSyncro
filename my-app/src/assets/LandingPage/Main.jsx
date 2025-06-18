@@ -1,10 +1,14 @@
 import './css/Main.css';
-export default function Main() {
+export default function Main({ setShowLogin, setShowRegister }) {
     return (
         <main>
             <section className="login-container" id="Hogar">
-                <button className="btn">Iniciar Session</button>
-                <button className="btn">Registrarse</button>
+                <button className="btn" onClick={() => setShowLogin(true)}>
+                    Iniciar Session
+                </button>
+                <button className="btn" onClick={() => setShowRegister(true)}>
+                    Registrarse
+                </button>
             </section>
             <section className="AboutUs" id="Nosotros">
                 <h2>
