@@ -8,9 +8,10 @@ function App() {
     return (
         <>
             {/* Rendering Landing Page */}
-            {!isLoggedIn && <LandingPage />}
-            {isLoggedIn && (
+            {isLoggedIn ? (
                 <UserDashboard user={isLoggedIn} logout={setIsLoggedIn} />
+            ) : (
+                <LandingPage />
             )}
         </>
     );
