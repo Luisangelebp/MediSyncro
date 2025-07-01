@@ -1,9 +1,12 @@
 import './css/MobilMenu.css';
 import { useState } from 'react';
 
-export default function MobilMenu({ elementsMenu, setActiveMenu }) {
+export default function MobilMenu({ elementsMenu, setActiveMenu, logout }) {
     const [menuOpen, setMenuOpen] = useState(false);
     const elements_Menu = elementsMenu;
+    const handleLogout = () => {
+        logout(false);
+    };
     return (
         <>
             <div className="mobil-menu" onClick={() => setMenuOpen(!menuOpen)}>
@@ -16,7 +19,7 @@ export default function MobilMenu({ elementsMenu, setActiveMenu }) {
                             return (
                                 <li key={index}>
                                     <a
-                                        href={`#${element}`}
+                                        href="#"
                                         onClick={() => {
                                             setMenuOpen(false);
                                             setActiveMenu(element);
@@ -28,6 +31,15 @@ export default function MobilMenu({ elementsMenu, setActiveMenu }) {
                                 </li>
                             );
                         })}
+                        <li>
+                            <a
+                                href="#"
+                                onClick={handleLogout}
+                                className="menu-item"
+                            >
+                                Cerrar sesión
+                            </a>
+                        </li>
                     </ul>
                 </div>
             )}

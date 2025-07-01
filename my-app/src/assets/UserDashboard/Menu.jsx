@@ -1,6 +1,9 @@
 import './css/Menu.css';
 
-const Menu = ({ elementsMenu }) => {
+const Menu = ({ elementsMenu, setActiveMenu, logout }) => {
+    const handleLogout = () => {
+        logout(false);
+    };
     return (
         <nav>
             <ul className="menuNormal">
@@ -8,8 +11,8 @@ const Menu = ({ elementsMenu }) => {
                     return (
                         <li key={index}>
                             <a
-                                href={`#${element}`}
-                                onClick={() => setMenuOpen(false)}
+                                href="#"
+                                onClick={() => setActiveMenu(element)}
                                 className="menu-item"
                             >
                                 {element}
@@ -17,6 +20,11 @@ const Menu = ({ elementsMenu }) => {
                         </li>
                     );
                 })}
+                <li>
+                    <a href="#" onClick={handleLogout} className="menu-item">
+                        Cerrar sesión
+                    </a>
+                </li>
             </ul>
         </nav>
     );

@@ -4,7 +4,7 @@ import '../../../public/logo.svg';
 import '../../css/App.css';
 import { useScreenWidth } from '../constans/hooks';
 import { elementsMenu } from '../constans/constans';
-export default function Header({ elementsMenuDefault, setActiveMenu }) {
+export default function Header({ elementsMenuDefault, setActiveMenu, logout }) {
     const screenWidth = useScreenWidth();
     return (
         <header>
@@ -18,11 +18,13 @@ export default function Header({ elementsMenuDefault, setActiveMenu }) {
                 <MobilMenu
                     elementsMenu={elementsMenuDefault || elementsMenu}
                     setActiveMenu={setActiveMenu}
+                    logout={logout}
                 ></MobilMenu>
             ) : (
                 <Menu
                     elementsMenu={elementsMenuDefault || elementsMenu}
                     setActiveMenu={setActiveMenu}
+                    logout={logout}
                 />
             )}
         </header>

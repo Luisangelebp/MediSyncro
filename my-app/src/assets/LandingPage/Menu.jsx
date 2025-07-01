@@ -7,11 +7,7 @@ const Menu = ({ elementsMenu }) => {
                 {elementsMenu.map((element, index) => {
                     return (
                         <li key={index}>
-                            <a
-                                href={`#${element}`}
-                                onClick={() => setMenuOpen(false)}
-                                className="menu-item"
-                            >
+                            <a href={`#${element}`} className="menu-item">
                                 {element}
                             </a>
                         </li>
